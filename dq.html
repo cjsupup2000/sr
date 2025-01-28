@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溪溪宝，我错了！</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            font-size: 1.8em;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .message strong {
+            color: #ff69b4;
+        }
+        .dog {
+            width: 150px;
+            margin: 20px auto;
+        }
+        .dog img {
+            width: 100%;
+            animation: float 3s ease-in-out infinite;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .hidden {
+            display: none;
+        }
+        .heart {
+            color: #ff69b4;
+            font-size: 2.5em;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>姐姐宝，我错了！</h1>
+        <div class="dog">
+            <!-- 替换为你提供的图片链接 -->
+            <img src="https://cdn3.easylink.cc/181a8510-8ed5-48fd-94ae-fc41aae570de_1af3181eb68d2722a6618a1cb277e0e.jpg?e=1738067303&token=J_WyMIdhZtwb0E0QHWRqEfQrd5lVSWLffl9QxaxP:C2mMuqOc8_VpTWa5l9QuTX5MtEk=" alt="可爱小狗">
+        </div>
+        <div class="message">
+            <p><strong>我错了姐姐宝</strong></p>
+            <p><strong>溪溪大美女天使老婆</strong>,我错了,</p>
+            <p>全世界我最爱你,只爱你！</p>
+            <p>你是世界上最好最漂亮的老婆！</p>
+        </div>
+        <button class="button" onclick="showLove()">点击这里接受我的道歉</button>
+        <div id="loveMessage" class="hidden heart">❤️ 我爱姐姐宝！ ❤️</div>
+    </div>
+
+    <script>
+        function showLove() {
+            const loveMessage = document.getElementById('loveMessage');
+            loveMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
